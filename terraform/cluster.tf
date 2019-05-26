@@ -1,14 +1,14 @@
 terraform {
   backend "gcs" {
     bucket = "breakme-terraform-state"
-    path = "cluster-terraform.tfstate"
-    project = "breakme-214404"
+    prefix = "cluster-terraform.tfstate"
+    //project = "breakme"
   }
 }
 
 
 provider "google" {
-  project = "breakme-214404"
+  project = "breakme"
   region = "us-west1"
 }
 

@@ -15,5 +15,5 @@ task terraform(type: com.roku.henka.TerraformTask) {
     tfInitParams = "-input=false"
 
     terraformBaseDir = "/opt/terraform"
-    terraformVersion = "0.11.3"
+    terraformVersion = "0.12.0"
 }
