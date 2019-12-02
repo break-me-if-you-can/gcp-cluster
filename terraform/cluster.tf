@@ -8,13 +8,13 @@ terraform {
 
 
 provider "google" {
-  project = "breakme"
+  project = "break-me-260801"
   region = "us-west1"
 }
 
 resource "google_container_cluster" "demo_cluster" {
   name = "k8s-cluster"
-  zone = "us-west1-a"
+  location = "us-west1-a"
   initial_node_count = 4
 
   master_auth {
