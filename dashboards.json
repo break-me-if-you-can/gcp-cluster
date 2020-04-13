@@ -1,0 +1,354 @@
+{
+  "dashboards": [
+    {
+      "name": "projects/918589168017/dashboards/16256750220397623949",
+      "displayName": "Geese latency",
+      "etag": "898a4e39c1bcc5118eab1f1b03e735ae",
+      "gridLayout": {
+        "columns": "2",
+        "widgets": [
+          {
+            "title": "Geese",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"geese.GeeseService/GetGeese\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_99"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"geese.GeeseService/GetGeese\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_50"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "projects/918589168017/dashboards/17512144933082391834",
+      "displayName": "Gateway latency",
+      "etag": "27958b24983d9b04acc9081ace66fe3b",
+      "gridLayout": {
+        "columns": "2",
+        "widgets": [
+          {
+            "title": "Gateway",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"gateway.FixtureService/GetFixture\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_99"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"gateway.FixtureService/GetFixture\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_50"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "projects/918589168017/dashboards/1861990079698527946",
+      "displayName": "clouds' latency",
+      "etag": "179664413c70daee4aef565336e50593",
+      "gridLayout": {
+        "columns": "2",
+        "widgets": [
+          {
+            "title": "Clouds",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"clouds.CloudsService/GetClouds\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_99"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"clouds.CloudsService/GetClouds\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_50"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "projects/918589168017/dashboards/6178003685242605131",
+      "displayName": "Leaderboard latency",
+      "etag": "458229ff70436c53f9cf17c652eb02d4",
+      "gridLayout": {
+        "columns": "2",
+        "widgets": [
+          {
+            "title": "Leaderboard",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"gateway.LeaderboardService/GetTopScores\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_99"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/server_latency\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"gateway.LeaderboardService/GetTopScores\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_DELTA",
+                        "crossSeriesReducer": "REDUCE_PERCENTILE_50"
+                      }
+                    },
+                    "unitOverride": "ms"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "projects/918589168017/dashboards/6344321674640350873",
+      "displayName": "QPS",
+      "etag": "23ecbac3b1733910206db27a7cd84d25",
+      "gridLayout": {
+        "columns": "2",
+        "widgets": [
+          {
+            "title": "Gateway",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/completed_rpcs\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"gateway.FixtureService/GetFixture\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_RATE",
+                        "crossSeriesReducer": "REDUCE_SUM",
+                        "groupByFields": [
+                          "metric.label.\"grpc_server_status\""
+                        ]
+                      }
+                    },
+                    "unitOverride": "1"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          },
+          {
+            "title": "Leaderboard",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/completed_rpcs\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"gateway.LeaderboardService/GetTopScores\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_RATE",
+                        "crossSeriesReducer": "REDUCE_SUM",
+                        "groupByFields": [
+                          "metric.label.\"grpc_server_status\""
+                        ]
+                      }
+                    },
+                    "unitOverride": "1"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          },
+          {
+            "title": "Clouds",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/completed_rpcs\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"clouds.CloudsService/GetClouds\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_RATE",
+                        "crossSeriesReducer": "REDUCE_SUM",
+                        "groupByFields": [
+                          "metric.label.\"grpc_server_status\""
+                        ]
+                      }
+                    },
+                    "unitOverride": "1"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          },
+          {
+            "title": "Geese",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"custom.googleapis.com/opencensus/grpc.io/server/completed_rpcs\" resource.type=\"k8s_container\" metric.label.\"grpc_server_method\"=\"geese.GeeseService/GetGeese\"",
+                      "aggregation": {
+                        "perSeriesAligner": "ALIGN_RATE",
+                        "crossSeriesReducer": "REDUCE_SUM",
+                        "groupByFields": [
+                          "metric.label.\"grpc_server_status\""
+                        ]
+                      }
+                    },
+                    "unitOverride": "1"
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
