@@ -1,0 +1,18 @@
+## Prerequisites
+
+* google cloud SDK
+* terraform
+
+## Setting up new cluster
+
+Create a bucket called breakme-terraform-state
+
+Run following commands:
+
+```
+gcloud auth application-default login
+gcloud config set project <your_project_id>
+gcloud services enable servicemanagement.googleapis.com servicecontrol.googleapis.com cloudresourcemanager.googleapis.com compute.googleapis.com container.googleapis.com containerregistry.googleapis.com cloudbuild.googleapis.com
+terraform plan
+terraform apply
+```
