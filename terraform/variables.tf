@@ -1,7 +1,11 @@
+variable "gcp_project" {
+  type = string
+}
+
 variable "cluster_auth_user" {
-  type = "string"
+  type = string
 }
 
 variable "cluster_auth_pwd" {
-  type = "string"
+  type = string
 }

@@ -1,4 +1,6 @@
+terraform/.terraform.lock.hcl
 terraform/.terraform
 terraform/terraform.tfstate
 .gradle
-
+env.sh
+.idea
